@@ -15,12 +15,8 @@ dotenv.config();
 const port = process.env.PORT || 4500;
 //health-route to check server is working right or not.
 app.get("/health", (req, res) => {
-    const dbStatus =
-      mongoose.connection.readyState === 1 ? "Connected" : "Disconnected";
-  
     res.status(200).json({
       server: "Running",
-      database: dbStatus,
     });
   });
 
