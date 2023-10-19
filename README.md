@@ -9,6 +9,6 @@
    
 5. Set up environment variables:
      Create a .env file in the server directory.
-     and add the necessary environment variables (e.g., API_KEY('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') , PORT(4000) etc.) to the .env file.
+     and add the necessary environment variables (e.g., API_KEY, PORT(4000) etc.) to the .env file.
 6. Start the server:node server.js
 7. server will be running on http://localhost:4000
