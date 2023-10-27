@@ -21,7 +21,8 @@ app.get("/health", (req, res) => {
   });
 
 //api to sending request to chatgpt api and get neccessary stuff and send to frontend
-app.post("/completions", async (req, res) => {
+app.post("/", async (req, res) => {
+    console.log(req.body)
     const options = {
         method:"POST",
         headers:{
